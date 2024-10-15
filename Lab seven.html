@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My to do list</title>
-    <link rel="stylesheet" href="style.css">
+    <title><b><u>Neil's Todo-List</title></u></b>
+<style>
+    body {
+        background-color: silver;
+    }
+
+    h1{
+        align-content: center;
+        color: darkblue;
+        font-family:'Roboto';
+    }
+
+    ul{
+        color: rgb(168, 10, 10);
+    }
+        
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1><u>My to Do list</u></h1>
-        <input type="text" id="inputtext" placeholder="All your word is here...">
-        <button id="addtaskButton">Add a task</button>
-        <ul id="Listitem"></ul>
-    </div>   
+    <script>
+        function addTask(event){
+            event.preventDefault();
+            const input = document.getElementByID("Task");
+            const newTask = input.value.trim();
+
+            if (newTask)
+                constli = document.createElement("li");
+                li.textcontent - newtask;
+                document.getElementByID("Neil's Todo-List").appendChild(li);
+        }
+    </script>
+    <h1><u><b>Neil's Todo-List</b></u></h1>
+
+    <form id="Neil's Todo-List">
+        <label for="task">Add new task:</label>
+        <input type="Text" ID="Task" name="Task" required><br><br>
+        <input type="forward" ID="forward" value="forward">
+    </form>
+
+    <script>
+        document.getElementById("Neil's todo-input").addEventListener("Send", addTask);
+    </script>
+    <ul id="Neil's todo-list">    
+    </ul>
+
 </body>
 </html>
